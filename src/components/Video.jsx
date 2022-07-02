@@ -4,7 +4,7 @@ import ReactPlayer from 'react-player'
 
 function Video() {
   return (
-    <div className='h-[350px] w-[350px] overflow-hidden md:right-0'>
+    <div className='h-[350px] w-[350px] overflow-hidden'>
         <ReactPlayer
         url={Videoo}
         playing='true'

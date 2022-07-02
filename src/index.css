@@ -7,7 +7,6 @@
   margin:0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(0, 0, 0);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -27,6 +26,24 @@
     0 0 40px #ffffff,
     0 0 80px #ffffff,
     0 0 160px #ffffff;
+  }
+}
+
+@keyframes animatedos
+{
+  0%,19%,21%,60.1%,61%,66.1%,81%,91.1%,93%
+  {
+    color: #ffffff50;
+    text-shadow: none;
+  }
+  19.1%,21.1%,30%,60%,61.1%,66%,81.1%,91%,92.1%,100%
+  {
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 10px rgb(0, 0, 0),
+    0 0 20px rgb(0, 0, 0),
+    0 0 40px rgb(0, 0, 0),
+    0 0 80px rgb(0, 0, 0),
+    0 0 160px rgb(0, 0, 0);
   }
 }
 

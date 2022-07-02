@@ -21,7 +21,10 @@ function NavBar() {
       ];
 
 
+      
   return (
+
+
     <div>
         <div className={`transition-all duration-500 ease-in ${open?"hidden":""}`}>
         <Title name="NanoWeb'Dev"/>
@@ -29,7 +32,7 @@ function NavBar() {
         <div className={`transition-all duration-500 ease-in ${open?"":"hidden"}`}>
         <Titledos name="NanoWeb'Dev"/>
         </div>
-        <div className='fixed right-0 m-4 z-10' onClick={()=>setOpen(!open)}>
+        <div className='absolute right-0 m-4 z-50' onClick={()=>setOpen(!open)}>
         <Hamburger direction='right' duration={1} color="white" size={40}/>
         </div>
         <div className={` z-40 absolute bg-white text sm:text-xl lg:text-3xl h-full left-0 w-2/4 transition-all duration-1000 ease-in-out ${open?"":"-left-[100%]"}`}>

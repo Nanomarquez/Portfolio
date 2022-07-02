@@ -37,6 +37,9 @@ module.exports = {
     },
     animation: {
       "luces" : 'animate 5s linear infinite',
+    },
+    animationdos: {
+      "lucesdos" : 'animatedos 5s linear infinite',
     }
   },
   plugins: [],

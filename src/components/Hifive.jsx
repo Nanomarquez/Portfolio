@@ -4,9 +4,9 @@ import ReactPlayer from 'react-player'
 
 function Hifive() {
   return (
-    <div className='absolute h-[300px] w-[300px] overflow-hidden right-0 bg-white'>
+    <div className='absolute h-[300px] left-0 w-[300px] overflow-hidden bg-white'>
         <ReactPlayer 
-        className='relative -rotate-45 right-[-15px]'
+        className='relative rotate-45 left-[-100px]'
         url={Hi}
         playing='true'
         loop='true'

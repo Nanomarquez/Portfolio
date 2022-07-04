@@ -4,6 +4,7 @@ import Shine from './components/Shine';
 import About from './components/About';
 import Skills from './components/Skills';
 
+
 function App() {
 
 
@@ -19,6 +20,7 @@ function App() {
         <div className='bg-white'>
           <Skills/>
         </div>
+        
       </div>  
   );
 }

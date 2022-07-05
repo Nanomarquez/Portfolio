@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/react": "^2.2.1",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
     "@headlessui/react": "^1.6.5",
     "@heroicons/react": "^1.0.6",
     "@testing-library/jest-dom": "^5.16.4",
@@ -10,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "daisyui": "^2.18.0",
+    "framer-motion": "^6.3.16",
     "hamburger-react": "^2.5.0",
     "react": "^18.2.0",
     "react-animated-progress-bar": "^1.1.1",

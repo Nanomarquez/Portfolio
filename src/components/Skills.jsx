@@ -1,22 +1,19 @@
 import React from 'react'
-// eslint-disable-next-line
-import Hifive from './Hifive'
 import styled from 'styled-components'
-import Progres from './Progres'
-
+import Aos from 'aos'
+import 'aos/dist/aos.css';
+import Experience from './Experience'
 function Skills() {
+  Aos.init()
   return (
 
-    <div>
-      <Titulo>
-        <h1 className='h-12 text-center text-6xl font-extrabold '>Skills</h1>
+    <div className='h-[500px]'>
+      <Titulo  data-aos="fade-top"
+     data-aos-duration="1000">
+        <h1 className='h-12 text-center text-6xl font-extrabold'>Skills</h1>
       </Titulo>
-      <br />
-
-      <div>
-       <Progres/>
+      <Experience/>
       </div>
-    </div>
 
 
   )
@@ -28,7 +25,6 @@ const Titulo = styled.div`
 h1{
   position:relative;
   margin: 30px;
-  margin-left:15px;
   margin-top:40px;
   z-index:30;
   pointer-events: none;

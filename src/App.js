@@ -3,7 +3,7 @@ import NavBar from './components/NavBar';
 import Shine from './components/Shine';
 import About from './components/About';
 import Skills from './components/Skills';
-
+import Portfolio from './components/Portfolio';
 
 function App() {
 
@@ -17,9 +17,14 @@ function App() {
       </div>
         <About/>
         </div>
-        <div className='bg-white'>
+        <div className='bg-white h-screen relative pb-10'>
           <Skills/>
         </div>
+        <div className='pt-10 max-h-screen'>
+
+          <Portfolio/>
+        </div>
+        
         
       </div>  
   );

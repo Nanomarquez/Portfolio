@@ -88,3 +88,28 @@
 .hover-3:hover {
   --_i: 1;
 }
+
+.title {
+  position: relative;
+  color: #262626;
+  padding: 5px 5px;
+}
+
+.title:before {
+  background: #262626;
+  color: white;
+  content: "These are the technologies I've worked with";
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  padding: 5px 5px;
+  -webkit-clip-path: polygon(0% 0%, 30% 0%, 30% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 30% 0%, 30% 100%, 0% 100%);
+  animation: slide 4s 1s alternate-reverse infinite;
+}
+
+@keyframes slide {
+  50% {
+    -webkit-clip-path: polygon(70% 0%, 100% 0%, 100% 100%, 70% 100%);
+  }
+}

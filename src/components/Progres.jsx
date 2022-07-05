@@ -1,16 +1,16 @@
 import React from 'react'
+import { CircularProgress, CircularProgressLabel } from '@chakra-ui/react'
 
-function Progres() {
+function Progres(props) {
     
   return (
-<div>
-<div class="flex justify-between mb-1">
-  <span class="text-base font-medium text-blue-700 dark:text-white">Flowbite</span>
-  <span class="text-sm font-medium text-blue-700 dark:text-white">45%</span>
-</div>
-<div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-  <div class="bg-blue-600 h-2.5 rounded-full" style={{width: '45%'}}></div>
-</div>
+<div className='flex flex-col items-center justify-center'>
+  <h1 className='uppercase'>{props.name}</h1>
+  <div className='relative'>
+<CircularProgress value={props.valor} color='black' size='120px'>
+  <CircularProgressLabel>{props.valor}%</CircularProgressLabel>
+</CircularProgress>
+  </div>
 </div>
   )
 }
